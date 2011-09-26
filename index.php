@@ -2,10 +2,12 @@
 <div class="container_12">
 
 	<div class="grid_12">
-		<div class="main-container">
+	<div class="main-container">		
 		<div class="attention-container">		
-			<h1 class="title">TaskTracker</h1>				
-			<h2 class="slogan">Introducing the TaskTracker: Now you can quickly add your Tasks and have fun doing it as well.</h2>			
+			<div class="attention">		
+				<h1 class="title">TaskTracker</h1>				
+				<h2 class="slogan">Introducing the TaskTracker: Now you can quickly add your Tasks and have fun doing it as well.</h2>			
+			</div>
 		</div>
 			
 		<div class="callout-container">
