@@ -62,11 +62,7 @@
 <div class="container_12">
 	<div class="grid_12">
 		<nav>
-			<ul class="inline">
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Login</a></li>
-			</ul>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary_header' ) ); ?>
 		</nav>
 	</div>
 </div>

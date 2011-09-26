@@ -114,10 +114,9 @@ header ul li a {
 	}
 
 
-/*= Control
--------------------------------------------------------------- */ 
-ul.inline { list-style-type: none; }
-ul.inline li { display: inline; }
+.menu-header-navigation-container .menu {}
+ul.menu { list-style-type: none; }
+ul.menu li { display: inline; }
 
 
 /*= Type 

@@ -5,15 +5,10 @@
 			<div class="grid_5 alpha">
 				<h2>TaskTracker</h2>
 			</div>
-			<div class="grid_4 push_3 omega">
-			<nav>
-				<ul class="inline">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Credits</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Login</a></li>					
-				</ul>
-			</nav>			
+			<div class="grid_5 push_2 omega">
+				<nav>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary_footer' ) ); ?>
+				</nav>
 			</div>
 		</footer>
 	</div>
