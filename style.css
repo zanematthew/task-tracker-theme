@@ -87,7 +87,7 @@ footer ul li a {
 	margin-right: 5px; 
 	}	
 
-header { 
+header.primary { 
 	background: -webkit-linear-gradient(top , #EFEFEF, #f2f2f2);
 	border-bottom: 1px solid rgba(150, 150, 150, 0.2);
 	border-top: 2px solid #00AECF; 	
@@ -98,14 +98,11 @@ header {
 	width: 100%;
 	}
 
-header .grid_12 {	
-	}
-
-header ul li { 
+header.primary ul li { 
 	margin-right: 10px;
 	}
 
-header ul li a { 
+header.primary ul li a { 
 	color: #ccc;
 	font-size: 1em;
 	font-weight: normal; 
@@ -113,8 +110,6 @@ header ul li a {
 	margin-right: 5px; 
 	}
 
-
-.menu-header-navigation-container .menu {}
 ul.menu { list-style-type: none; }
 ul.menu li { display: inline; }
 
@@ -278,3 +273,84 @@ h2.slogan {
 
 
 
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+    display:block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float:left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin:0;
+    max-width: 98.5%;
+    padding:0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0 4px 5px;
+}

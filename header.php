@@ -58,7 +58,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header>
+<header class="primary">
 <div class="container_12">
 	<div class="grid_12">
 		<nav>
