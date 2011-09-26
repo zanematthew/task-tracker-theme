@@ -61,6 +61,14 @@
 <div class="container_12">
 	<div class="grid_12">
 		<div class="cyan-bar"></div>
-		<header></header>
+		<header>
+		<nav>
+			<ul class="inline">
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+		</header>
 	</div>
 </div>

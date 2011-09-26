@@ -10,17 +10,19 @@
 			
 		<div class="callout-container">
 			<div class="callout">
-				<h3>Sign-up</h3>
-				<h4>How fast can I sign-up.</h4>
-				<p>Lorem ipsum dolor sit amet, praesent at pertineo vel, vindico mos nunc, eros. Eum et vulpes proprius genitus, nutus.</p>
+				<h3>Sign-up</h3>				
+				<h4>All right I'm sold, let me start using it. </h4>
+				<p>We have 3 basic packages, one of which if FREE! all of which are designed to help you get stuff done. Sign-up for the one that fits you.</p>
 				<button class="large" id="signup_botton">SIGN-UP</button>
+				<p><small>All you need to <strong>regsiter</strong> is a few minutes and your <strong>email</strong>.</small></p>
 			</div>
 		
 			<div class="callout">
 				<h3>Demo</h3>
 				<h4>Okay, let me check it out.</h4>
-				<p>Accumsan ulciscor minim consectetuer, tua plaga nunc, tum roto pertineo, inhibeo ex facilisi tincidunt duis facilisi ibidem. </p>
+				<p>Not interested yet? Well try out the demo! From there you can <em>create</em>, <em>update</em>, <em>delete</em>, <em>manage</em> and <em>add notes</em> your <em>Tasks</em>.</p>
 				<button class="large" id="demo_button">DEMO</button>
+				<p><small>The <strong>user name</strong> is <strong>admin</strong> and the <strong>password</strong> is <strong>admin</strong></small></p>
 			</div>
 
 			<div class="callout screenshot">	

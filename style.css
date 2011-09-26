@@ -26,7 +26,7 @@ a {
 
 body { 
 	color: #888;
-	font: 300 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font: 300 62.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 
 button {
@@ -42,6 +42,7 @@ button {
 	cursor: pointer;
 	font: bold 15px/1 "Helvetica Neue", sans-serif, arial;
 	margin-right: 10px;
+	margin-bottom: 5px;
 	padding: 8px 20px;
 	border-image: initial;
 	border-color: #CCC #BBB #A0A0A0;
@@ -49,32 +50,55 @@ button {
 
 button:hover {   
 	-webkit-transition: border-color 0.5s linear;  
+	-moz-transition: border-color 0.5s linear;  
 	border-color: #939393;
 	}
 
 footer { 
 	border-top: 2px solid #EFEFEF;	
 	font-size: 0.85em; 
-	padding: 20px 0 20px;
+	margin-bottom: 60px;
+	padding: 20px 0 20px;	
 	}
+
+footer h2 {
+	color: #ccc;
+	}
+
+footer nav { 
+	text-align: right;
+	}
+
+footer ul li a {
+	color: #ccc;
+	font-size: 1em;
+	font-weight: normal; 
+	letter-spacing: 1.5px;
+	margin-right: 5px; 
+	}	
 
 header { 
 	font-size: 0.85em; 
 	margin-bottom: 40px; 
 	}
 
-header ul { 
-	list-style-type: none; 
-	}
-
 header ul li { 
-	display: inline; 
+	margin-right: 10px;
 	}
 
 header ul li a { 
+	color: #ccc;
+	font-size: 1em;
 	font-weight: normal; 
+	letter-spacing: 1.5px;
 	margin-right: 5px; 
 	}
+
+
+/*= Control
+-------------------------------------------------------------- */ 
+ul.inline { list-style-type: none; }
+ul.inline li { display: inline; }
 
 
 /*= Type 
@@ -118,23 +142,36 @@ h2.slogan {
 
 .callout-container .callout { 
 	-webkit-transition: background-color 0.5s linear;  
+	-moz-transition: background-color 0.5s linear;  
  	background: #fff; 	
 	float: left;	
-	min-height: 170px;
+	min-height: 215px;
 	padding: 20px;	
 	width: 429px;
 	}
 
 .callout-container .callout:hover { 
 	-webkit-transition: background-color 0.5s linear;  
- 	background: #F5F5F5; 
+	-moz-transition: background-color 0.5s linear;  
+ 	background: rgba(0, 0, 0, .04); 
 	}
+
+.callout-container .callout:hover strong,
+.callout-container .callout:hover em {
+	-webkit-transition: background-color 0.5s linear;  	
+	-moz-transition: background-color 0.5s linear;  		
+	background-color: #FAFFA0;
+	}	
 
 .callout-container .callout:first-child { 
 	border-right: 2px solid #EFEFEF;	
 	}
 
-.callout-container .callout h3 {
+.callout-container strong { 
+	font-weight: bold;
+	}
+
+.callout-container h3 {
 	font-size: 20px;
 	font-weight: normal;
 	color: #6D6D6D;
@@ -142,14 +179,23 @@ h2.slogan {
 	text-shadow: 1px 1px 0 #fff;	
 	}
 
-.callout-container .callout h4 {
+.callout-container h4 {
 	color: #333;
+	font-size: 1.2em;
 	text-shadow: 1px 1px 0 #fff;
 	}
 
-.callout-container .callout p {
+.callout-container p {
 	font-size: 14px;
+	letter-spacing: 0.1em;
+	line-height: 1.4em;
 	margin-bottom: 20px; 
+	}
+
+.callout-container small { 
+	color: #ccc;
+	font-size: 0.75em;
+	font-weight: normal;
 	}
 
 .callout-container .screenshot { 
@@ -173,6 +219,7 @@ h2.slogan {
 
 .callout-container .screenshot a {
 	-webkit-transition: background-color 0.5s linear;  
+	-moz-transition: background-color 0.5s linear;  
 	border-radius: 5px;
 	padding: 20px;
 	float: left;
@@ -180,6 +227,7 @@ h2.slogan {
 
 .callout-container .screenshot a:hover { 
 	-webkit-transition: background-color 0.5s linear;  
+	-moz-transition: background-color 0.5s linear;  
 	background-color: #CCEFF5;
 	/* box-shadow: 1px 1px 0 #99DFEC; */
 	}
