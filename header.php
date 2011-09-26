@@ -58,10 +58,9 @@
 </head>
 
 <body <?php body_class(); ?>>
+<header>
 <div class="container_12">
 	<div class="grid_12">
-		<div class="cyan-bar"></div>
-		<header>
 		<nav>
 			<ul class="inline">
 				<li><a href="#">About</a></li>
@@ -69,6 +68,6 @@
 				<li><a href="#">Login</a></li>
 			</ul>
 		</nav>
-		</header>
 	</div>
 </div>
+</header>

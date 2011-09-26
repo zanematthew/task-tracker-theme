@@ -88,8 +88,17 @@ footer ul li a {
 	}	
 
 header { 
-	font-size: 0.85em; 
-	margin-bottom: 40px; 
+	background: -webkit-linear-gradient(top , #EFEFEF, #f2f2f2);
+	border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+	border-top: 2px solid #00AECF; 	
+	float: left;
+	font-size: 1em; 	
+	margin-bottom: 40px;	
+	padding: 20px 0;
+	width: 100%;
+	}
+
+header .grid_12 {	
 	}
 
 header ul li { 
@@ -264,17 +273,9 @@ h2.slogan {
 	height: auto; 
 	}
 
-.cyan-bar { 
-	border: 2px solid #00AECF; 
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
-	float: left; width: 100%;
-	margin-bottom: 5px;
-	}
-
 #demo_button { 
 	color: green; 
 	}
 
-.container_12 .grid_12 { background: #fff; }
+
 
