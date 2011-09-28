@@ -48,11 +48,6 @@
 	if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
 
-	/* Always have wp_head() just before the closing </head>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to add elements to <head> such
-	 * as styles, scripts, and meta tags.
-	 */
 	wp_head();
 ?>
 </head>
@@ -61,9 +56,17 @@
 <header class="primary">
 <div class="container_12">
 	<div class="grid_12">
-		<nav>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary_header' ) ); ?>
-		</nav>
+		<div class="grid_6 alpha">
+			<hgroup>
+				<h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
+				<h2 id="site-description"><span>&ndash;</span><?php bloginfo( 'description' ); ?></h2>
+			</hgroup>
+		</div>
+		<div class="grid_6 omega right">
+			<nav>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary_header' ) ); ?>
+			</nav>
+		</div>
 	</div>
 </div>
 </header>

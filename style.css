@@ -28,6 +28,7 @@ html:hover {
 	background-color: #f3f3f3;
 	}
 */
+
 /*= Global
 -------------------------------------------------------------- */ 
 a { 
@@ -87,8 +88,18 @@ footer ul li a {
 	margin-right: 5px; 
 	}	
 
+header.primary,
+header.primary a { color: #ccc; }
+header.primary a:hover { color: #888; }
+
+header .right { text-align: right; }
+
 header.primary { 
 	background: -webkit-linear-gradient(top , #EFEFEF, #f2f2f2);
+	background: -moz-linear-gradient(top , #EFEFEF, #f2f2f2);
+	background: -o-linear-gradient(top , #EFEFEF, #f2f2f2);
+	background: linear-gradient(top , #EFEFEF, #f2f2f2);	
+	background: #f2f2f2;
 	border-bottom: 1px solid rgba(150, 150, 150, 0.2);
 	border-top: 2px solid #00AECF; 	
 	float: left;
@@ -147,11 +158,10 @@ h2.slogan {
 	-moz-transition: background-color 0.5s linear;  	
 	background-color: #E9F7F7;
 
-/*
 	-webkit-transition: box-shadow 0.5s linear;  
 	-moz-transition: box-shadow 0.5s linear;		
 	box-shadow: 1px 1px 0 #D2DEDE;		
-*/	
+
 	}
 
 .attention-container .attention {
@@ -354,3 +364,7 @@ a img.aligncenter {
     margin:0;
     padding:0 4px 5px;
 }
+
+h1#site-title { float: left; }
+h2#site-description { font-weight: normal; float: left; }
+h2#site-description span { margin: 0 3px; }

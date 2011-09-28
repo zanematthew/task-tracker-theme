@@ -9,4 +9,5 @@ function get_tasktracker_setup() {
 		'primary_footer' => 'Footer at the very bottom of the page'
 		);		
     register_nav_menus( $menus );
+
 }
