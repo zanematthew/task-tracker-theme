@@ -66,10 +66,16 @@ button:hover {
 	border-color: #939393;
 	}
 
-footer { 
+footer.primary { 
+	border-top: 2px solid #EFEFEF;
 	font-size: 0.85em; 
 	margin-bottom: 60px;
 	padding: 20px 0 20px;	
+	}
+
+footer,
+footer a {
+	color: #ccc;
 	}
 
 footer h2 {
@@ -87,6 +93,9 @@ footer ul li a {
 	letter-spacing: 1.5px;
 	margin-right: 5px; 
 	}	
+
+ul.menu { margin-bottom: 5px; }
+ul.menu li { margin-left: 10px; }
 
 header.primary,
 header.primary a { color: #ccc; }
@@ -184,7 +193,7 @@ h2.slogan {
 	-webkit-transition: background-color 0.5s linear;  
 	-moz-transition: background-color 0.5s linear;  
  	background: #fff; 	
-	border-bottom: 2px solid #EFEFEF;
+	border-top: 2px solid #EFEFEF;
 	float: left;	
 	min-height: 215px;
 	padding: 20px;	
@@ -365,6 +374,11 @@ a img.aligncenter {
     padding:0 4px 5px;
 }
 
-h1#site-title { float: left; }
-h2#site-description { font-weight: normal; float: left; }
-h2#site-description span { margin: 0 3px; }
+h1.site-title,
+h3.site-title { float: left; }
+
+h2.site-description,
+h4.site-description { font-weight: normal; float: left; }
+
+h2.site-description span,
+h4.site-description span { margin: 0 3px; }

@@ -6,7 +6,8 @@ function get_tasktracker_setup() {
 	
 	$menus = array(
 		'primary_header' => 'Header at the very top of the page',
-		'primary_footer' => 'Footer at the very bottom of the page'
+		'footer_one' => 'First level of links in the footer',
+		'footer_two' => 'Second level of links in the footer'
 		);		
     register_nav_menus( $menus );
 
