@@ -12,7 +12,6 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
 	/*
@@ -37,19 +36,7 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<?php
-	/* We add some JavaScript to pages with the comment form
-	 * to support sites with threaded comments (when in use).
-	 */
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
-
-	wp_head();
-?>
+<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -58,13 +45,24 @@
 	<div class="grid_12">
 		<div class="grid_6 alpha">
 			<hgroup>
-				<h1 class="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
-				<h2 class="site-description"><span>&ndash;</span><?php bloginfo( 'description' ); ?></h2>
+				<h1 class="site-title"><span><a href="http://gettasktracker.dev/">TaskTracker</a></h1>
+				<h2 class="site-description"><span>&ndash;</span> Some slogan here</h2>
 			</hgroup>
 		</div>
 		<div class="grid_6 omega right">
 			<nav>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary_header' ) ); ?>
+			<ul class="menu">
+		    	<li>
+		    	    <?php if ( !is_user_logged_in() ) : ?>
+		    	        <a href="#register" data-template="/custom/register">Register</a>
+		    	    <?php endif; ?>
+		    	</li>
+		    	<?php if ( !is_user_logged_in() ) : ?>
+    				<li><a href="#load-template" id="get_tt_login_handle" data-template="custom/login.php">Login</a></li>			
+    			<?php else : ?>
+    				<li><a href="<?php echo wp_logout_url( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ); ?>" title="Click to logout">Logout</a></li>
+    			<?php endif; ?>
+			</ul>
 			</nav>
 		</div>
 	</div>

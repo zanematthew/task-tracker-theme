@@ -41,7 +41,7 @@ body {
 	font: 300 62.5% "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 
-button {
+a.button {
 	background: -moz-linear-gradient(center top , #F9F9F9, #E3E3E3);
 	background: -webkit-linear-gradient(top , #F9F9F9, #E3E3E3);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F9F9F9), color-stop(100%, #E3E3E3));
@@ -52,6 +52,7 @@ button {
 	border-radius: 5px;
 	color: #00AECF;
 	cursor: pointer;
+	display: inline-block;
 	font: bold 15px/1 "Helvetica Neue", sans-serif, arial;
 	margin-right: 10px;
 	margin-bottom: 5px;
@@ -60,7 +61,7 @@ button {
 	border-color: #CCC #BBB #A0A0A0;
 	}
 
-button:hover {   
+a.button:hover {   
 	-webkit-transition: border-color 0.5s linear;  
 	-moz-transition: border-color 0.5s linear;  
 	border-color: #939393;
@@ -69,7 +70,7 @@ button:hover {
 footer.primary { 
 	border-top: 2px solid #EFEFEF;
 	font-size: 0.85em; 
-	margin-bottom: 60px;
+	margin: 40px 0 60px;
 	padding: 20px 0 20px;	
 	}
 
@@ -193,7 +194,6 @@ h2.slogan {
 	-webkit-transition: background-color 0.5s linear;  
 	-moz-transition: background-color 0.5s linear;  
  	background: #fff; 	
-	border-top: 2px solid #EFEFEF;
 	float: left;	
 	min-height: 215px;
 	padding: 20px;	
@@ -213,9 +213,7 @@ h2.slogan {
 	background-color: #FAFFA0;
 	}	
 
-.callout-container .callout:first-child { 
-	border-right: 2px solid #EFEFEF;	
-	}
+.sign-up {	border-right: 2px solid #EFEFEF; }
 
 .callout-container strong { 
 	font-weight: bold;
@@ -249,6 +247,7 @@ h2.slogan {
 	}
 
 .callout-container .screenshot { 
+	border-bottom: 2px solid #EFEFEF;
 	width: 900px; 
 	}
 
@@ -285,11 +284,6 @@ h2.slogan {
 	width: 128px; 
 	height: auto; 
 	}
-
-#demo_button { 
-	color: green; 
-	}
-
 
 
 /* =WordPress Core
@@ -382,3 +376,30 @@ h4.site-description { font-weight: normal; float: left; }
 
 h2.site-description span,
 h4.site-description span { margin: 0 3px; }
+
+
+/*= Forms
+-------------------------------------------------------------- */
+form { font: 300 12px/1.4em sans-serif; }
+form p { float: left; width: 100%; margin: 0 0 20px 0; }
+form p label { float: left; margin-bottom: 5px; }
+form fieldset { border: 0; float: left; width: 23%; margin: 0 10px 10px 0; }
+form fieldset label { clear: both; float: left; font-weight: 300; margin: 0 0 4px 5px; }
+textarea { height: 200px; padding: 5px; width: 97%; }
+textarea,
+input[type="password"],
+input[type="text"] { 
+background: #FAFAFA;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+border: 1px solid #ddd; 
+border-radius: 3px; 
+font: 300 15px/1.625 "Helvetica Neue",Helvetica,Arial,sans-serif;
+color: #888; 
+clear: both; float: left; padding: 5px; width: 97%; 
+}
+select:focus,
+input:focus[type="text"],
+textarea:focus { border-color: #939393; box-shadow: 0 0 3px #939393; }
+select,
+textarea { border: 1px solid #ddd; color: #888; padding: 5px; }
+select { font-weight: 300; font-size: 12px; margin-top: 5px; width: 90%; }
