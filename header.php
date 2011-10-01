@@ -53,8 +53,8 @@
 			<nav>
 			<ul class="menu">
 		    	<li>
-		    	    <?php if ( !is_user_logged_in() ) : ?>
-		    	        <a href="#register" data-template="/custom/register">Register</a>
+		    	    <?php if ( !is_user_logged_in() ) : ?>		    	        
+		    	        <?php wp_register(' ' , ' '); ?>
 		    	    <?php endif; ?>
 		    	</li>
 		    	<?php if ( !is_user_logged_in() ) : ?>
