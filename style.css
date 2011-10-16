@@ -68,8 +68,8 @@ a.button:hover {
 	}
 
 footer.primary { 
-	border-top: 2px solid #EFEFEF;
-	font-size: 0.85em; 
+	border-top: 2px solid #EFEFEF;	
+	font: 10px/1em sans-serif, arial; 		
 	margin: 40px 0 60px;
 	padding: 20px 0 20px;	
 	}
@@ -113,7 +113,7 @@ header.primary {
 	border-bottom: 1px solid rgba(150, 150, 150, 0.2);
 	border-top: 2px solid #00AECF; 	
 	float: left;
-	font-size: 1em; 	
+	font: 10px/1em sans-serif, arial; 	
 	margin-bottom: 40px;	
 	padding: 20px 0;
 	width: 100%;
@@ -141,7 +141,6 @@ h1.title {
 	font-size: 40px;
 	color: #00AECF;
 	text-shadow: 1px 1px 0 white;
-	float: left;
 	}
 
 h2.slogan {
