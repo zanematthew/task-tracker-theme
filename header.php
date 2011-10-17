@@ -43,25 +43,27 @@
 <header class="primary">
 <div class="container_12">
 	<div class="grid_12">
-		<div class="grid_6 alpha">
+		<div class="grid_6 alpha">		
 			<hgroup>
-				<h1 class="site-title"><span><a href="http://gettasktracker.dev/">TaskTracker</a></h1>
-				<h2 class="site-description"><span>&ndash;</span> Some slogan here</h2>
-			</hgroup>
+				<h1 class="site-title"><span><a href="http://gettasktracker.dev/">TaskTracker</a></h1>			
+			</hgroup>			
 		</div>
 		<div class="grid_6 omega right">
 			<nav>
 			<ul class="menu">
+		    	<!--
 		    	<li>
 		    	    <?php if ( !is_user_logged_in() ) : ?>		    	        
 		    	        <?php wp_register(' ' , ' '); ?>
 		    	    <?php endif; ?>
 		    	</li>
+		    	
 		    	<?php if ( !is_user_logged_in() ) : ?>
     				<li><a href="#load-template" id="get_tt_login_handle" data-template="custom/login.php">Login</a></li>			
     			<?php else : ?>
     				<li><a href="<?php echo wp_logout_url( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ); ?>" title="Click to logout">Logout</a></li>
     			<?php endif; ?>
+    			-->
 			</ul>
 			</nav>
 		</div>

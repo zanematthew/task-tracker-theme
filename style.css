@@ -194,23 +194,8 @@ h2.slogan {
 	-moz-transition: background-color 0.5s linear;  
  	background: #fff; 	
 	float: left;	
-	min-height: 215px;
-	padding: 20px;	
-	width: 429px;
+	min-height: 215px;	
 	}
-
-.callout-container .callout:hover { 
-	-webkit-transition: background-color 0.5s linear;  
-	-moz-transition: background-color 0.5s linear;  
- 	background: rgba(0, 0, 0, .04); 
-	}
-
-.callout-container .callout:hover strong,
-.callout-container .callout:hover em {
-	-webkit-transition: background-color 0.5s linear;  	
-	-moz-transition: background-color 0.5s linear;  		
-	background-color: #FAFFA0;
-	}	
 
 .sign-up {	border-right: 2px solid #EFEFEF; }
 
@@ -232,6 +217,7 @@ h2.slogan {
 	text-shadow: 1px 1px 0 #fff;
 	}
 
+.callout-container li,
 .callout-container p {
 	font-size: 14px;
 	letter-spacing: 0.1em;
@@ -239,32 +225,25 @@ h2.slogan {
 	margin-bottom: 20px; 
 	}
 
+.callout-container .content ul { margin: 0 0 30px; }
+.callout-container .content li { list-style: none; margin: 0 0 10px 20px; }
+
 .callout-container small { 
 	color: #ccc;
 	font-size: 0.75em;
 	font-weight: normal;
 	}
 
-.callout-container .screenshot { 
-	border-bottom: 2px solid #EFEFEF;
-	width: 900px; 
-	}
-
-.callout-container .screenshot p { 
-	width: 60%; 
-	}
-
-.callout-container .screenshot ul { 
+.callout-container ul.gallery { 
 	list-style-type: none; 
-	text-align: center; 
 	}
 
-.callout-container .screenshot ul li { 
-	display: inline-block;
+.callout-container ul.gallery li { 
+	display: inline;
 	margin-right: 5px;
 	}
 
-.callout-container .screenshot a {
+.callout-container .gallery a {
 	-webkit-transition: background-color 0.5s linear;  
 	-moz-transition: background-color 0.5s linear;  
 	border-radius: 5px;
@@ -272,14 +251,14 @@ h2.slogan {
 	float: left;
 	}
 
-.callout-container .screenshot a:hover { 
+.callout-container .gallery a:hover { 
 	-webkit-transition: background-color 0.5s linear;  
 	-moz-transition: background-color 0.5s linear;  
 	background-color: #CCEFF5;
 	/* box-shadow: 1px 1px 0 #99DFEC; */
 	}
 
-.callout-container .screenshot a img { 
+.callout-container a img { 
 	width: 128px; 
 	height: auto; 
 	}
@@ -402,3 +381,11 @@ textarea:focus { border-color: #939393; box-shadow: 0 0 3px #939393; }
 select,
 textarea { border: 1px solid #ddd; color: #888; padding: 5px; }
 select { font-weight: 300; font-size: 12px; margin-top: 5px; width: 90%; }
+
+p.flex-caption { margin: 0 20px 1px 24px; width: 549px; }
+.home .flex-direction-nav li a.next { background-position: -52px 0; right: 8px; }
+.home .flex-direction-nav li a.prev { background-position: 0 0; left: 8px; }
+.home .flex-control-nav { bottom: -30px; }
+
+.callout h2 { color: #333; font-size: 30px; }
+/* .callout a.button { width: 80%; text-align: center; } */
