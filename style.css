@@ -382,10 +382,13 @@ select,
 textarea { border: 1px solid #ddd; color: #888; padding: 5px; }
 select { font-weight: 300; font-size: 12px; margin-top: 5px; width: 90%; }
 
-p.flex-caption { margin: 0 20px 1px 24px; width: 549px; }
-.home .flex-direction-nav li a.next { background-position: -52px 0; right: 8px; }
+p.flex-caption { margin: 0 20px 1px 24px; width: 529px; }
+.home .flex-direction-nav li a.next { background-position: -52px 0; right: 15px; }
 .home .flex-direction-nav li a.prev { background-position: 0 0; left: 8px; }
-.home .flex-control-nav { bottom: -30px; }
+.home .flex-control-nav { bottom: 0px; }
+.home .flexslider .slides img { max-width: 600px; }
 
 .callout h2 { color: #333; font-size: 30px; }
 /* .callout a.button { width: 80%; text-align: center; } */
+
+
