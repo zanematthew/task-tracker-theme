@@ -45,7 +45,7 @@
 	<div class="grid_12">
 		<div class="grid_6 alpha">		
 			<hgroup>
-				<h1 class="site-title"><span><a href="http://gettasktracker.dev/">TaskTracker</a></h1>			
+				<h1 class="site-title"><span><a href="http://gettasktracker.com/">TaskTracker</a></h1>			
 			</hgroup>			
 		</div>
 		<div class="grid_6 omega right">
