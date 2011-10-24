@@ -19,7 +19,7 @@
 							<li>Delete a Task</li>							
 							<li>Filter your Tasks</li>							
 						</ul>
-						<p>Give the demo a try! Login using <strong>user name</strong> is <strong>admin</strong> and the <strong>password</strong> is <strong>admin</strong></p>
+						<p>Give the demo a try! Login using <strong>user name</strong> is <strong>demo</strong> and the <strong>password</strong> is <strong>demo</strong></p>
 						<a href="<?php bloginfo('url'); ?>/demo/" class="button" id="demo_button">DEMO</a>						
 					</div>
 					</div>
